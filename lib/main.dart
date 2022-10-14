@@ -38,14 +38,14 @@ class MainHome extends StatelessWidget {
         padding: EdgeInsets.fromLTRB(40, 340, 0, 0),
         child: Column(
           children: const <Widget>[
-            Text('NAME : ',
+            Text('NAME : Ulquiorra Cifer',
             style: TextStyle(
               fontSize: 16,
               color: Colors.white,
             ),
             ),
             Text(''),
-            Text('LEVEL : ',
+            Text('LEVEL : 14(봉인), 30(봉인해제), 64(2단계 해방)',
             style: TextStyle(
               fontSize: 16,
               color:Colors.white,
