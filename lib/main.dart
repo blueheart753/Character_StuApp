@@ -12,7 +12,7 @@ class CharacterCard extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue
       ),
-      home: MainHome(),
+      home: MainHome (),
     );
   }
 }
@@ -23,9 +23,43 @@ class MainHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[500],
       appBar: AppBar(
-        title: Text('캐릭터 정보창'),
-        backgroundColor: Colors.redAccent,
+        title: Text('캐릭터 정보창',
+        style: TextStyle(
+          color: Colors.black
+        ),
+        ),
+        backgroundColor: Colors.grey[500],
+        centerTitle: true,
+        elevation: 0.0,
+      ),
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(40, 340, 0, 0),
+        child: Column(
+          children: const <Widget>[
+            Text('NAME : ',
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.white,
+            ),
+            ),
+            Text(''),
+            Text('LEVEL : ',
+            style: TextStyle(
+              fontSize: 16,
+              color:Colors.white,
+            ),
+            ),
+            Text(''),
+            Text('SKILL : ',
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.white,
+            ),
+            )
+          ],
+        ),
       ),
     );
   }
